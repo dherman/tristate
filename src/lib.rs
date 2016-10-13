@@ -4,7 +4,7 @@
 use std::convert::From;
 
 /// A three-valued type equivalent to `Option<bool>`.
-#[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
+#[derive(Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
 pub enum TriState {
     /// The tri-state value signifying definitive truth.
     Yes,
