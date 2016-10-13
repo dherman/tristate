@@ -16,7 +16,7 @@ a spam classifier:
 ```rust
 type Spam = TriState;
 
-trait ClassifySpam {
+trait Classify {
     fn classify() -> Spam;
 }
 
