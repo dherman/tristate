@@ -1,6 +1,6 @@
 # TriState
 
-A three-valued type equivalent to `Option<bool>`.
+A three-valued type equivalent to `Option<bool>`:
 
 ```rust
 enum TriState {
