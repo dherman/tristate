@@ -32,9 +32,6 @@ impl TriState {
     /// A mnemonic for `no()`.
     pub fn definitely_not(self) -> bool { self.no() }
 
-    /// A mnemonic for `unknown()`.
-    pub fn maybe(self) -> bool { self.unknown() }
-
     /// Converts `self` to an `Option<bool>`. Equivalent to `Option::<bool>::from(self)`.
     pub fn to_bool(self) -> Option<bool> {
         match self {
