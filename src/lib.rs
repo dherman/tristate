@@ -58,3 +58,12 @@ impl From<Option<bool>> for TriState {
         }
     }
 }
+
+impl From<bool> for TriState {
+    fn from(b: bool) -> TriState {
+        match b {
+            true => TriState::Yes,
+            false => TriState::No
+        }
+    }
+}
