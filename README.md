@@ -20,7 +20,7 @@ extern crate tristate;
 pub use tristate::TriState as Spam;
 
 trait Classify {
-    fn classify() -> Spam;
+    fn classify(&self) -> Spam;
 }
 
 impl Classify for Message { /* ... */ }
