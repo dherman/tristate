@@ -11,8 +11,9 @@ enum TriState {
 ```
 
 A nice way to use this type is with a domain-specific type alias via `pub use`.
-(For esoteric reasons, a simple "typedef" type alias doesn't work.) For example,
-a spam classifier:
+(For [esoteric reasons](https://github.com/rust-lang/rust/issues/26264), a
+simple typedef-style type alias doesn't work, though this Rust limitation will
+eventually be removed.) For example, a spam classifier:
 
 ```rust
 extern crate tristate;
