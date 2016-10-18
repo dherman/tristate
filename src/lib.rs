@@ -2,6 +2,7 @@
 //! It also provides several convenience methods for testing tri-state values.
 
 use std::convert::From;
+use std::default::Default;
 
 /// A three-valued type equivalent to `Option<bool>`.
 #[derive(Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
@@ -63,4 +64,8 @@ impl From<bool> for TriState {
             false => TriState::No
         }
     }
+}
+
+impl Default for TriState {
+    fn default() -> Self { TriState::Unknown }
 }
